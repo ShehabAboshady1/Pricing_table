@@ -12,14 +12,12 @@
     <style>
       body {
         font-family: "Sono", sans-serif;
-
-      }
-      html{
-      background-color: #FFEEA9;
-      height: 100%;
-      display: flex;
-      justify-content: center;
+        display: flex;
+        justify-content: center;
         align-items: center;
+        background-color: #FFEEA9;
+        min-height: 100vh;
+        padding: 40px 20px;
       }
       .pricing-container{
        
@@ -41,6 +39,7 @@
         min-height: 230px;
         border: 6px solid #ff6600;
         border-radius: 20px;
+        
       }
       .plan-title{
         font-size: 1.2rem;
@@ -49,6 +48,7 @@
       .plan-price{
         font-size: 2rem;
         font-weight: 900;
+         margin: 4px 0;
       }
       .plan-features{
         margin: 0px 10px 10px 0px;
@@ -68,21 +68,22 @@
         border: none;
         border-radius: 5px;
         padding: 10px;
-
+        margin-bottom: 11px;
       }
 
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1000px) {
         .pricing-container{
-
         flex-direction: column;
         gap: 20px;
+        
       }
       }
     </style>
   </head>
 
   <body>
+    
     <div class="pricing-container">
       <div class="pricing-plan">
         <div class="plan-title">Basic</div>
