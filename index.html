@@ -12,14 +12,20 @@
     <style>
       body {
         font-family: "Sono", sans-serif;
-        background-color: #FFEEA9;
+
+      }
+      html{
+      background-color: #FFEEA9;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+        align-items: center;
       }
       .pricing-container{
-        height: 100vh;
+       
         display: flex;
         gap: 2rem;
-        justify-content: center;
-        align-items: center;
+        
       }
       .pricing-plan{
         color: #FFEEA9;
@@ -31,9 +37,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 300px;
+        min-width: 300px;
         min-height: 230px;
-        border:5px solid #FF7D29;
+        border: 6px solid #ff6600;
         border-radius: 20px;
       }
       .plan-title{
@@ -54,10 +60,10 @@
         gap: 20px;
         font-size: 0.7rem;
         font-weight: bold;
-        list-style: none;
+        list-style:none;
       }
       .plan-button{
-        background-color: #FF7D29;
+        background-color: #ff6600;
         color: #FFEEA9;
         border: none;
         border-radius: 5px;
@@ -68,6 +74,7 @@
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1000px) {
         .pricing-container{
+
         flex-direction: column;
         gap: 20px;
       }
